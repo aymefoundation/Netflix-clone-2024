@@ -1,7 +1,67 @@
-.App{
-  text-align: center;
+.App {
+  min-height: 100vh;
+  background-color: #000;
+  color: white;
+  margin: 0;
+  padding: 0;
 }
-*{
-padding: 0;
-margin: 0;
+
+.main-content {
+  padding: 20px;
+  flex: 1;
+  background-color: #000;
+  color: white;
+}
+
+.main-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.main-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Responsive Main Content */
+@media (max-width: 1024px) {
+  .main-content {
+    padding: 18px;
+  }
+
+  .main-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .main-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 15px;
+  }
+
+  .main-content h1 {
+    font-size: 2rem;
+  }
+
+  .main-content p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    padding: 12px;
+  }
+
+  .main-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .main-content p {
+    font-size: 0.9rem;
+  }
 }
