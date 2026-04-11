@@ -2,3 +2,4 @@ netflix-clone/src/assets/vite.svg
 netflix-clone/src/assets/react.svg
 netflix-clone/src/assets/hero.png
 node_modules
+.env
