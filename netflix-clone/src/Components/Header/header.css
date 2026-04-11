@@ -1,0 +1,141 @@
+.header_outer_container {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 70px;
+    color: white;
+    transition: all 0.5s;
+    transition-timing-function: ease-in;
+    z-index: 1;
+}
+
+.nav__black {
+    background-color: rgb(20, 20, 20);
+}
+
+.header_container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav_links {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    align-items: center;
+}
+
+.nav_links li,
+.header_right ul li {
+    list-style: none;
+    margin: 0;
+    cursor: pointer;
+    color: white;
+}
+
+.header_right ul {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    align-items: center;
+}
+
+.logo img {
+    display: block;
+    max-height: 45px;
+    width: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .header_container {
+        width: 95%;
+    }
+
+    .header_left {
+        gap: 20px;
+    }
+
+    .nav_links {
+        gap: 15px;
+    }
+
+    .nav_links li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header_outer_container {
+        height: 60px;
+    }
+
+    .header_container {
+        width: 98%;
+    }
+
+    .header_left {
+        gap: 15px;
+    }
+
+    .logo img {
+        max-height: 35px;
+    }
+
+    .nav_links {
+        gap: 10px;
+    }
+
+    .nav_links li {
+        font-size: 12px;
+    }
+
+    .header_right ul {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header_outer_container {
+        height: 50px;
+    }
+
+    .header_left {
+        gap: 10px;
+    }
+
+    .logo img {
+        max-height: 30px;
+    }
+
+    /* Hide some navigation items on very small screens */
+    .nav_links li:nth-child(n+4) {
+        display: none;
+    }
+
+    .nav_links {
+        gap: 8px;
+    }
+
+    .nav_links li {
+        font-size: 11px;
+    }
+
+    .header_right ul {
+        gap: 10px;
+    }
+}

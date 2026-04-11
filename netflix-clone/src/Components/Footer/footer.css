@@ -1,0 +1,144 @@
+.footer_outer_container {
+  background-color: #141414;
+  color: #b3b3b3;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px 24px;
+}
+
+.footer_inner_container {
+  width: min(1120px, 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.footer_icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  color: #b3b3b3;
+}
+
+.footer_icons svg {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.footer_icons svg:hover {
+  color: #fff;
+}
+
+.footer_data {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(150px, 1fr));
+  gap: 24px;
+  width: 100%;
+  justify-items: start;
+}
+
+.footer_data > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer_data ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer_data li {
+  color: #b3b3b3;
+  cursor: pointer;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  transition: color 0.2s ease;
+}
+
+.footer_data li:hover {
+  color: #fff;
+}
+
+.footer_bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.service_code {
+  display: inline-flex;
+}
+
+.service_code p {
+  border: 1px solid #6d6d6d;
+  padding: 10px 22px;
+  display: inline-block;
+  color: #b3b3b3;
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
+}
+
+.service_code p:hover {
+  border-color: #fff;
+  color: #fff;
+}
+
+.copy-write {
+  font-size: 0.9rem;
+  color: #737373;
+  text-align: left;
+}
+
+@media (max-width: 920px) {
+  .footer_data {
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .footer_outer_container {
+    padding: 30px 16px 18px;
+  }
+
+  .footer_data {
+    grid-template-columns: 1fr;
+  }
+
+  .footer_icons {
+    justify-content: center;
+  }
+
+  .footer_data li {
+    font-size: 0.92rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer_outer_container {
+    padding: 24px 12px 14px;
+  }
+
+  .footer_icons svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .service_code p {
+    padding: 8px 18px;
+    font-size: 0.9rem;
+  }
+
+  .copy-write {
+    font-size: 0.85rem;
+  }
+}
